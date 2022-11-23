@@ -74,16 +74,16 @@ const SearchResults = ({handleSearch, ref}) => {
       <input autoFocus placeholder="Search Promethean" type="text" value={searchText} onChange={handleSearchText} />
       <div className='searchResults__prw'>
         {searchText.length && filteredSearchResults_PRW.length > 0 ? <h3>Promethean World</h3> : null }
-        {searchText && filteredSearchResults_PRW.slice(0,4).map((product, index) => (
+        {searchText && filteredSearchResults_PRW.slice(0,3).map((product, index) => (
           <div key={index}>{product.title}</div>
         ))}
 
         {searchText.length && filteredSearchResults_support.length > 0 ? <h3>Support</h3> : null }
-        {searchText && filteredSearchResults_support.slice(0,4).map((product, index) => (
+        {searchText && filteredSearchResults_support.slice(0,3).map((product, index) => (
           <div key={index}>{product.title}</div>
         ))}
         {searchText.length && filteredSearchResults_learn.length > 0 ? <h3>Learn</h3> : null }
-        {searchText && filteredSearchResults_learn.slice(0,4).map((product, index) => (
+        {searchText && filteredSearchResults_learn.slice(0,3).map((product, index) => (
           <div key={index}>{product.title}</div>
         ))}
       </div>

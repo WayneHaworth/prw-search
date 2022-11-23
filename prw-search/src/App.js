@@ -4,11 +4,17 @@ import {useState, } from 'react';
 
 function App() {
   const [showSearchResults, setShowSearchResults] = useState(false);
+  const [overlayOpacity, setOverlayOpacity] = useState(0);
+
 
   const handleSearch = () => {
     setShowSearchResults(!showSearchResults);
     console.log(showSearchResults)
-
+    if (overlayOpacity === 0) {
+      setOverlayOpacity(100);
+    } else {
+      setOverlayOpacity(0);
+    }
   }
 
   return (
@@ -41,7 +47,7 @@ function App() {
           </ul>
           <div className='header__search-container'>
             <a className='hero__link' href="#" onClick={handleSearch}>
-              <img className="header__search-icon" src="https://img.icons8.com/ios-filled/512/search--v4.png" />
+              <img onClick={handleSearch} className="header__search-icon" src="https://img.icons8.com/ios-filled/512/search--v4.png" />
             </a>
           </div>
         </div>
@@ -54,6 +60,7 @@ function App() {
       <div className="u-container">
           <img className='hero__image' src="https://www.prometheanworld.com/wp-content/uploads/2022/05/AP9-hero_Homepage_0522v2.6.png" />
       </div>
+      <div style={{opacity: overlayOpacity}} class="overlay" ></div>
     </div>
     </div>
   );

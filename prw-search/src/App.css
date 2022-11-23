@@ -1,4 +1,4 @@
-* { color: #472645; margin: 0; padding: 0}
+* { color: #472645; margin: 0; padding: 0; font-family: 'Noto Sans', sans-serif;}
 
 .u-container { max-width: 1220px; margin: auto; }
 
@@ -6,7 +6,7 @@
 .header__top { font-size: 12px; gap: 1rem;  padding: 1rem 0; border-bottom: 1px solid #ccc;  }
 .header__row { justify-content: space-between; display: flex; }
 .header__row .header__sites-links { font-weight: 600;}
-.header__logo { width: 220px; height: 45px;}
+.header__logo { width: 180px; height: 45px;}
 .header__search-icon { width: 25px; height: 25px;}
 
 .header__sites { display: flex; list-style: none; gap: 1rem;}
@@ -52,16 +52,20 @@ textarea:focus, input:focus{
   top: 53px;
   background: white;
   width: 800px;
-
+  border-radius: 10px;
   z-index: 1;
   box-sizing: border-box;
 }
 
-.searchResults__prw h3 { padding-top: 1rem;background: #fafafa; font-size: 13px; font-weight: 400;}
-.searchResults__prw div {padding: 4px 0; font-size: 14px; cursor: pointer; font-weight: 400;}
+.searchResults__prw h3 { padding-top: 1rem;background: #fafafa; font-size: 13px; font-weight: 400; color:#757575;}
+.searchResults__prw div {padding: 4px 0; font-size: 14px; cursor: pointer; font-weight: 400; color:#0e071e;}
 
 .searchResults__prw h3, .searchResults__prw div {
   padding: 8px 2rem;
+}
+
+.searchResults__prw div:last-of-type {
+  margin-bottom: 1rem;
 }
 
 .hero {
@@ -75,4 +79,16 @@ textarea:focus, input:focus{
   position: relative;
   bottom: -4px;
   width:100%;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.6);
+    opacity: 0;
+    position: fixed;
+    top: 127px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transition: .7s;
+
 }
