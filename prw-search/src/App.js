@@ -1,6 +1,6 @@
 import './App.css';
 import SearchResults from './components/searchResults';
-import {useState} from 'react';
+import {useState, } from 'react';
 
 function App() {
   const [showSearchResults, setShowSearchResults] = useState(false);
@@ -8,6 +8,7 @@ function App() {
   const handleSearch = () => {
     setShowSearchResults(!showSearchResults);
     console.log(showSearchResults)
+
   }
 
   return (

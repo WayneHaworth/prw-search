@@ -1,6 +1,6 @@
 import {useState} from "react";
 
-const SearchResults = ({handleSearch}) => {
+const SearchResults = ({handleSearch, ref}) => {
 
     const products = [
         { "title": "How ActivPanel interactive whiteboards for classrooms integrates into any technology environment", "category": "prw" },
@@ -49,6 +49,7 @@ const SearchResults = ({handleSearch}) => {
         { "title": "Set the classroom mood with your ActivPanel", "category": "learn" }
     ];
 
+
     const [searchText, setSearchText] = useState('')
     const handleSearchText = (event) => { setSearchText(event.target.value) }
   
@@ -70,7 +71,7 @@ const SearchResults = ({handleSearch}) => {
     return (
       <div className="searchResultsContainer">
     <div className='searchResults'>
-      <input type="text" value={searchText} onChange={handleSearchText} />
+      <input autoFocus placeholder="Search Promethean" type="text" value={searchText} onChange={handleSearchText} />
       <div className='searchResults__prw'>
         {searchText.length && filteredSearchResults_PRW.length > 0 ? <h3>Promethean World</h3> : null }
         {searchText && filteredSearchResults_PRW.slice(0,4).map((product, index) => (
