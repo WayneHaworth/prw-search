@@ -61,7 +61,11 @@ function App() {
       <div className="u-container">
           <img className='hero__image' src="https://www.prometheanworld.com/wp-content/uploads/2022/05/AP9-hero_Homepage_0522v2.6.png" />
       </div>
-      <div onClick={handleSearch} style={{opacity: overlayOpacity}} class="overlay" ></div>
+      <div
+        onClick={overlayOpacity ? handleSearch : null}        
+        style={{opacity: overlayOpacity}}
+        class="overlay" >
+      </div>
     </div>
     </div>
   );
