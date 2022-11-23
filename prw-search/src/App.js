@@ -55,12 +55,13 @@ function App() {
           {showSearchResults ? <SearchResults overlayOpacity={overlayOpacity} handleSearch={handleSearch}/> : null}
 
       </div> 
+      {/* <div className="header__bottom"></div> */}
     </div>
     <div className='hero'>
       <div className="u-container">
           <img className='hero__image' src="https://www.prometheanworld.com/wp-content/uploads/2022/05/AP9-hero_Homepage_0522v2.6.png" />
       </div>
-      <div style={{opacity: overlayOpacity}} class="overlay" ></div>
+      <div onClick={handleSearch} style={{opacity: overlayOpacity}} class="overlay" ></div>
     </div>
     </div>
   );
