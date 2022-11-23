@@ -1,0 +1,42 @@
+* { color: #472645; margin: 0; padding: 0}
+
+.u-container { max-width: 1220px; margin: auto; }
+
+.header { background: white;}
+.header__top { font-size: 12px; gap: 1rem;  padding: 1rem 0; border-bottom: 1px solid #ccc;  }
+.header__row { justify-content: space-between; display: flex; }
+.header__row .header__sites-links { font-weight: 600;}
+.header__logo { width: 220px; height: 45px;}
+.header__search-icon { width: 25px; height: 25px;}
+
+.header__sites { display: flex; list-style: none; gap: 1rem;}
+.header__sites-links { text-decoration: none; }
+.header__main { padding: 1rem 0; display: flex; justify-content: space-between; align-items: center;}
+.header__main-top { position: relative;}
+.header__main-nav { gap: 4rem; font-weight: 700;     text-transform: uppercase; font-size: 14px;}
+.header__search-container { }
+
+
+.searchResultsContainer {
+
+}
+.searchResults {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  background: white;
+  height: 100%;
+}
+
+.hero {
+  background-image: url("https://www.prometheanworld.com/wp-content/uploads/2022/05/Fireshade_Background-1-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.hero__image {
+  position: relative;
+  bottom: -4px;
+  width:100%;
+}
