@@ -1,6 +1,6 @@
 import {useState} from "react";
 
-const SearchResults = ({handleSearch, ref}) => {
+const SearchResults = ({handleSearch, overlayOpacity}) => {
 
     const products = [
         { "title": "How ActivPanel interactive whiteboards for classrooms integrates into any technology environment", "category": "prw" },
@@ -49,7 +49,6 @@ const SearchResults = ({handleSearch, ref}) => {
         { "title": "Set the classroom mood with your ActivPanel", "category": "learn" }
     ];
 
-
     const [searchText, setSearchText] = useState('')
     const handleSearchText = (event) => { setSearchText(event.target.value) }
   
@@ -69,7 +68,7 @@ const SearchResults = ({handleSearch, ref}) => {
       .filter( p => p.category === "learn")
 
     return (
-      <div className="searchResultsContainer">
+      <div style={{opacity: overlayOpacity}} className="searchResultsContainer">
     <div className='searchResults'>
       <input autoFocus placeholder="Search Promethean" type="text" value={searchText} onChange={handleSearchText} />
       <div className='searchResults__prw'>

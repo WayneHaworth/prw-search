@@ -1,6 +1,6 @@
 import './App.css';
 import SearchResults from './components/searchResults';
-import {useState, } from 'react';
+import {useState, useEffect} from 'react';
 
 function App() {
   const [showSearchResults, setShowSearchResults] = useState(false);
@@ -52,7 +52,7 @@ function App() {
           </div>
         </div>
         
-          {showSearchResults ? <SearchResults handleSearch={handleSearch}/> : null}
+          {showSearchResults ? <SearchResults overlayOpacity={overlayOpacity} handleSearch={handleSearch}/> : null}
 
       </div> 
     </div>
