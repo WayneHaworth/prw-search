@@ -1,4 +1,5 @@
 import {useState} from "react";
+import { MdContactSupport } from "react-icons/md";
 
 const SearchResults = ({handleSearch, overlayOpacity}) => {
 
