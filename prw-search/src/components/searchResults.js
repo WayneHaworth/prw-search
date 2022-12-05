@@ -35,7 +35,7 @@ const SearchResults = ({handleSearch, overlayOpacity}) => {
         { "title": "Gesture support for ActivPanel Elements Series and ActivPanel Titanium Pro", "category": "support" },    
         { "title": "ActivPanel Cobalt Firmware Upgrade Instructions", "category": "support" },
         { "title": "Radix VISO enablement and licensing for the ActivPanel", "category": "support" },
-        { "title": "Touch panning issues with ActivPanell", "category": "support" },
+        { "title": "Touch panning issues with ActivPanel", "category": "support" },
         { "title": "Create spinner lists by uploading .csv files", "category": "learn" },
         { "title": "Saving your Whiteboard", "category": "learn" },
         { "title": "Make a slideshow on your ActivPanel", "category": "support" },
@@ -47,7 +47,14 @@ const SearchResults = ({handleSearch, overlayOpacity}) => {
         { "title": "Using gestures to interact with ActivInspire on your ActivPanel", "category": "learn" },    
         { "title": "Chromium shortcuts on your ActivPanel 9", "category": "learn" },
         { "title": "Quick start guide for the ActivPanel 9", "category": "learn" },
-        { "title": "Set the classroom mood with your ActivPanel", "category": "learn" }
+        { "title": "Set the classroom mood with your ActivPanel", "category": "learn" },
+        { "title": "Do all Promethean pens work on all Promethean harware?", "category": "support" },
+        { "title": "Why is the right click menu appearing when I am using my ActivPen?", "category": "support" },
+        { "title": "How ActivPanel interactive whiteboards for classrooms integrates into any technology environment reliably and securely", "category": "prw" },
+        { "title": "Where can I get training on using interactive whiteboards?", "category": "prw" },
+        { "title": "Where can I purchase an ActivPen?", "category": "prw" },
+        
+
     ];
 
     const [searchText, setSearchText] = useState('')
