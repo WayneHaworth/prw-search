@@ -52,7 +52,15 @@ const SearchResults = ({handleSearch, overlayOpacity}) => {
         { "title": "Why is the right click menu appearing when I am using my ActivPen?", "category": "support" },
         { "title": "How ActivPanel interactive whiteboards for classrooms integrates into any technology environment reliably and securely", "category": "prw" },
         { "title": "Where can I get training on using interactive whiteboards?", "category": "prw" },
-        { "title": "Where can I purchase an ActivPen?", "category": "prw" },
+        { "title": "Where can I purchase a pen?", "category": "prw" },
+        { "title": "Can students share their device screens to the ActivPanel Elements Series interactive display?", "category": "prw" },
+        { "title": "Screen share: Tips for teachers and technology in the classroom", "category": "prw" },
+        { "title": "What is screen share?", "category": "support" },
+        { "title": "Screen share User Guide", "category": "support" },
+        { "title": "Promethean Screen Share for activpanel elements", "category": "prw" },
+
+        
+
         
 
     ];
