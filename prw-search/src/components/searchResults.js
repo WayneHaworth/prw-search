@@ -93,11 +93,11 @@ const SearchResults = ({handleSearch, overlayOpacity}) => {
           <div key={index}>{product.title}</div>
         ))}
 
-        {searchText.length && filteredSearchResults_support.length > 0 ? <h3>Support</h3> : null }
+        {searchText.length && filteredSearchResults_support.length > 0 ? <h3>Promethean Support</h3> : null }
         {searchText && filteredSearchResults_support.slice(0,3).map((product, index) => (
           <div key={index}>{product.title}</div>
         ))}
-        {searchText.length && filteredSearchResults_learn.length > 0 ? <h3>Learn</h3> : null }
+        {searchText.length && filteredSearchResults_learn.length > 0 ? <h3>Learn Promethean</h3> : null }
         {searchText && filteredSearchResults_learn.slice(0,3).map((product, index) => (
           <div key={index}>{product.title}</div>
         ))}
